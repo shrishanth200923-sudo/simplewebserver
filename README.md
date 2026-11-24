@@ -36,6 +36,8 @@ Start the server script and check for errors.
 Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 
 ## PROGRAM:
+
+```python
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 HTML = """<!DOCTYPE html>
@@ -47,23 +49,6 @@ HTML = """<!DOCTYPE html>
     <h2>Register Number: 26007816</h2>
     <h2>Name: shrishanth</h2>
     <h1>List of Protocols in TCP/IP Protocol Suite</h1>
-    <h3>Application Layer</h3>
-    <ul>
-        <li>HTTP</li><li>HTTPS</li><li>FTP</li><li>SMTP</li>
-        <li>DNS</li><li>DHCP</li><li>Telnet</li><li>SSH</li>
-    </ul>
-    <h3>Transport Layer</h3>
-    <ul>
-        <li>TCP</li><li>UDP</li>
-    </ul>
-    <h3>Internet Layer</h3>
-    <ul>
-        <li>IP</li><li>ICMP</li><li>ARP</li><li>IGMP</li>
-    </ul>
-    <h3>Network Access Layer</h3>
-    <ul>
-        <li>Ethernet</li><li>PPP</li>
-    </ul>
 </body>
 </html>
 """
@@ -79,7 +64,7 @@ server_address = ("127.0.0.1", 8000)
 httpd = HTTPServer(server_address, MyHandler)
 print("My Webserver is running on http://127.0.0.1:8000")
 httpd.serve_forever()
-
+```
 ## OUTPUT:
 <img width="1085" height="863" alt="image" src="https://github.com/user-attachments/assets/e9ddd43c-cf17-4c43-b7a3-0aa82b9d89fb" />
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/0a811cdb-a808-4871-a939-b9cb54d07028" />
